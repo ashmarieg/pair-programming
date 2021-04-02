@@ -1,0 +1,27 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ 
+ a {
+    text-decoration: none;
+    color:teal;
+    font-weight: bold;
+    
+}
+li {
+    list-style-type: none;
+    
+}
+.nav__items {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+    align-items: center;
+}
+.nav {
+    background-color: lightcoral;
+    height: 5rem;
+}
