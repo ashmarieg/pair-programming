@@ -3,7 +3,14 @@
     font-family: "Courier New", Courier, monospace;
   }
 
-  // &__image{
+  &__image{
+    width: 600px;
+    height: 600px;
+      }
 
-  // }
+  &__subheading{
+    font-family: "Courier New", Courier, monospace;
+  }
+
+   
 }

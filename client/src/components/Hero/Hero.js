@@ -9,7 +9,7 @@ class Hero extends React.Component {
           className="hero__image"
           src="../../assets/SomeGoodBadAdviceHero.jpg"
         ></img>
-        <h2 className="hero__subheading">Know anyone </h2>
+        <h2 className="hero__subheading">For anyone needing advice! </h2>
       </div>
     );
   }
