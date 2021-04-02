@@ -1,9 +1,10 @@
-import React from 'react';
-import { BrowserRouter as Router } from "react-router-dom"
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import logo from './logo.svg';
-import BadAdvice from './components/BadAdvice/BadAdvice'
-import Header from './components/Header/Header.js'
-// import BadAdvice from 
+import BadAdvice from "./components/BadAdvice/BadAdvice";
+import GoodAdvice from "./components/GoodAdvice/GoodAdvice";
+import Header from "./components/Header/Header.js";
+// import BadAdvice from
 // import './App.css';
 
 // import React from 'react'
@@ -11,15 +12,14 @@ import Header from './components/Header/Header.js'
 export default function App() {
   return (
     <Router>
-    <div>
-      <Header />
-      <BadAdvice />
-      
-    </div>
+      <div>
+        <Header />
+        <Switch>
+          {/* <Route path="/" exact component={Home} /> */}
+          <Route path="/badadvice" component={BadAdvice} />
+          <Route path="/goodadvice" component={GoodAdvice} />
+        </Switch>
+      </div>
     </Router>
-  )
+  );
 }
-
-
-
-
