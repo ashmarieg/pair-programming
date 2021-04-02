@@ -1,16 +1,19 @@
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
   &__heading {
     font-family: "Courier New", Courier, monospace;
+    margin-top: 1rem;
   }
 
-  &__image{
-    width: 600px;
-    height: 600px;
-      }
+  &__image {
+    width: 500px;
+  }
 
-  &__subheading{
+  &__subheading {
     font-family: "Courier New", Courier, monospace;
   }
-
-   
 }

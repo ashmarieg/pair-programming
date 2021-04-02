@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import logo from './logo.svg';
+import Home from "./pages/Home/Home";
 import BadAdvice from "./components/BadAdvice/BadAdvice";
 import GoodAdvice from "./components/GoodAdvice/GoodAdvice";
 import Header from "./components/Header/Header.js";
@@ -15,7 +15,7 @@ export default function App() {
       <div>
         <Header />
         <Switch>
-          {/* <Route path="/" exact component={Home} /> */}
+          <Route path="/" exact component={Home} />
           <Route path="/badadvice" component={BadAdvice} />
           <Route path="/goodadvice" component={GoodAdvice} />
         </Switch>
