@@ -1,0 +1,68 @@
+.header {
+    margin: 1rem 1rem .5rem 1rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    // @include tablet {
+    //     height: 5rem;
+    //     flex-direction: row;
+    //     padding-top: 1rem;
+    //     max-width: 45.5rem;
+    //     margin: auto;
+    // }
+
+    
+    input::placeholder {
+        color: black;
+    }
+
+    &__logo {
+        width: 8.5rem;
+        padding-bottom: 1rem;
+        // @include tablet{
+        //     margin-right: auto;
+        // }
+
+        // @include desktop{
+        //     margin-right: 31.5rem;
+        //     width: 10rem;
+        //     height: 1.8rem;
+        // }
+    }
+    
+    &__search {
+        // @include textarea;
+        // @include search-icon;
+        width: 15rem;
+        height: 3rem;
+        padding-left: 2.5rem;
+
+        
+    }
+
+    &__lowerhalf {
+        margin-top: .5rem;
+        display: flex;
+        
+    }
+    
+    &__button {
+        // @include button;
+        width: 13.5rem;
+        height: 3rem;
+        // background-image: url('../../assets/Icons/Icon-upload.svg');
+        background-repeat: no-repeat;
+        background-position-x: 3.6rem;
+        background-position-y: center;
+        
+    }
+    
+    &__mohan {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        margin-left: 1.2rem;
+    }
+}
