@@ -6,7 +6,7 @@
 
 a {
   text-decoration: none;
-  color: teal;
+  color: black;
   font-weight: bold;
 }
 li {
@@ -15,14 +15,15 @@ li {
 .nav__items {
   display: flex;
   justify-content: space-around;
-  padding-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.6rem;
   align-items: center;
 }
 
 .nav__logo {
-  height: 2.5rem;
+  height: 2.8rem;
 }
 .nav {
-  background-color: lightcoral;
+  background-color: rgb(235, 234, 234);
   height: 5rem;
 }

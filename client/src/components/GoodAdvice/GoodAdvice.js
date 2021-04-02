@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./GoodAdvice.scss";
 // import axios from "axios";
 
 let urlGood = "https://api.adviceslip.com/advice";
@@ -10,9 +11,7 @@ function GoodAdvice() {
     fetch(urlGood)
       .then((response) => response.json())
       .then((json) => {
-        // setAdvice();
         setAdvice(json.slip.advice);
-        // console.log(advice);
       });
   }, []);
 
@@ -20,16 +19,16 @@ function GoodAdvice() {
     fetch(urlGood)
       .then((response) => response.json())
       .then((json) => {
-        // setAdvice();
         setAdvice(json.slip.advice);
-        // console.log(advice);
       });
   };
 
   return (
-    <div>
-      <h2>{advice}</h2>
-      <button onClick={fetchGoodAdvice}>Generate new advice</button>
+    <div className="good">
+      <h2 className="good__heading">{advice}</h2>
+      <button className="good__button" onClick={fetchGoodAdvice}>
+        Generate new advice
+      </button>
     </div>
   );
 }

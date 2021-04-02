@@ -14,11 +14,9 @@ function Header() {
               <img className="nav__logo" src={logo} alt="logo" />
             </Link>
             <Link to="/badadvice">
-              {" "}
               <li>Bad Advice</li>
             </Link>
             <Link to="/goodadvice">
-              {" "}
               <li>Good Advice</li>
             </Link>
           </ul>

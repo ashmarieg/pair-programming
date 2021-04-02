@@ -1,0 +1,27 @@
+body {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(196, 251, 247, 1) 100%
+  );
+}
+
+.good {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  &__heading {
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 10rem;
+  }
+
+  &__button {
+    font-family: "Courier New", Courier, monospace;
+    padding: 1rem;
+    border-radius: 4px;
+    // background-color: ;
+  }
+}
